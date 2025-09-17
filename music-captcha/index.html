@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Music CAPTCHA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="captcha">
+    <h1>Verify you’re human</h1>
+
+    <!-- canvas оставляет место под нотную линию -->
+    <canvas id="staff" width="260" height="80"></canvas>
+
+    <!-- мини-клавиатура -->
+    <div id="keys">
+      <button data-note="C4"></button>
+      <button data-note="D4"></button>
+      <button data-note="E4"></button>
+      <button data-note="F4"></button>
+    </div>
+
+    <button id="play-seq" class="primary">Play sequence</button>
+    <button id="verify"  class="primary" disabled>Verify</button>
+
+    <p id="result"></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
